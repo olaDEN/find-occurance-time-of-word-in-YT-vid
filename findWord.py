@@ -5,9 +5,10 @@ def print_time(search_word,time):
     print(f"'{search_word}' was mentioned at:")
     # calculate the accurate time according to the video's duration
     for t in time:
+        hours = int(t // 3600)
         min = int(t // 60)
         sec = int(t % 60)
-        print(f"{min:02d}:{sec:02d}")
+        print(f"{hours:02d}:{minutes:02d}:{seconds:02d}")
 
 # Get the youtube video id form url after "?v="
 video_id = "1aA1WGON49E"
